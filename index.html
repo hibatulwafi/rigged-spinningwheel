@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wheel of Names | Random name picker</title>
+    <meta charset="UTF-8" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+    </style>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <div class="header">
+      <div class="logo">
+        <img
+          src="https://wheelofnames.com/images/logo-dark-background-38.png"
+          alt="Logo"
+        />
+        <span>Wheel of Fortune</span>
+      </div>
+      <div class="menu">
+        <button><i class="fas fa-plus"></i> New</button>
+        <button><i class="fas fa-folder-open"></i> Open</button>
+        <button><i class="fas fa-save"></i> Save</button>
+        <button><i class="fas fa-share-alt"></i> Share</button>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Wheel Container -->
+      <div class="wheel-container">
+        <div id="spin_the_wheel">
+          <canvas id="wheel" width="500" height="500"></canvas>
+          <div id="spin">SPIN</div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <table>
+          <tr class="text-center">
+            <td>
+              <h3><u>Entries</u></h3>
+            </td>
+            <td>
+              <h3>Result</h3>
+            </td>
+            <td>
+              <h3>Hide</h3>
+            </td>
+          </tr>
+        </table>
+
+        <textarea
+          id="entriesTextArea"
+          placeholder="Enter names here, one per line..."
+          rows="20"
+        ></textarea>
+        <div class="button-group mt-3">
+          <button
+            class="btn btn-outline-primary btn-sm w-100 mb-2"
+            style="font-size: 0.8rem"
+          >
+            <i class="fas fa-random me-2" style="font-size: 0.8rem"></i> Shuffle
+          </button>
+          <button
+            class="btn btn-outline-secondary btn-sm w-100 mb-2"
+            style="font-size: 0.8rem"
+          >
+            <i
+              class="fas fa-sort-alpha-down me-2"
+              style="font-size: 0.8rem"
+            ></i>
+            Sort
+          </button>
+          <button
+            class="btn btn-outline-success btn-sm w-100"
+            style="font-size: 0.8rem"
+          >
+            <i class="fas fa-image me-2" style="font-size: 0.8rem"></i> Add
+            Image
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="src/index.js"></script>
+  </body>
+</html>

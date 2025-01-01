@@ -1,1 +1,2 @@
-# rigged-spinningwheel
+# Under Construction
+## Next step, fixing animation
